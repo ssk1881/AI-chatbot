@@ -1,0 +1,388 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sparky-self learning A.I chatbot</title>
+
+    <!--Google web fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,300italic,400italic,600,700,600italic,200,200italic' rel='stylesheet' type='text/css'>    
+    <link href='http://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+    <!-- font awesome-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/skillset.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css"> 
+    <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    .colorgraph {
+  height: 5px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+    </style>
+</head>
+
+<body>
+<!--preloader-->
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div> 
+
+<header class="main_header">
+  <div class="row">
+    <div class="content"> <a class="logo" href="#">Sparky</a>
+      <div class="mobile-toggle"> <span></span> <span></span> <span></span></div>
+      <nav>
+        <ul class="main_menu">
+          <li><a href=".hero">Home</a></li>
+          <li><a href="#Login_area">Login</a></li>
+          <li><a href="http://localhost:5000">chat</a></li>
+           <li><a href="register.php">Register</a></li>
+          <li><a href=".contact_area">Contact</a></li>                    
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- END row --> 
+</header>
+
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="2000" id="bs-carousel">
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>Sparky <span>Self Learning</span></h1>        
+            <h3>A.I chatbot</h3>
+        </hgroup>
+       <a href="#Login_area" > <button class="btn btn-hero btn-lg"role="button">Login Now</button></a>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-2"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>We Are <span>Building A Bot</span></h1>        
+            <h3>Help Us take it to the next level</h3>
+        </hgroup>       
+      <a href="#234" ><button class="btn btn-hero btn-lg" role="button">See all features</button></a>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-3"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>Help <span>Sparky Grow</span></h1>        
+            <h3>Get started with simply chatting with sparky</h3>
+        </hgroup>
+      <a href="#234" >   <button class="btn btn-hero btn-lg" role="button">See all features</button></a>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div class="getit_area"id="234">
+  <div class="container">
+    <div class="row">
+      <div class="getit_section">
+        <h1>About Sparky</h1>
+      </div>  
+    </div>
+  </div>
+</div><!--  getit area end -->
+<div id="123" class="service_area"><br><br><br>
+<br><br><br><br><br><br>
+  <div class="container">
+    <div class="row">
+      <div class="service_section wow bounceInLeft animated">
+          <div class="col-md-3">
+            <div class="single_service">        
+              <div class="ico"><i class="fa fa-mobile"></i></div>
+              <h2>Cross Platform</h2>
+              <p>We are planning on getting Sparky available on multple devices so that where ever you go you can take Sparky with you</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="single_service">        
+              <div class="ico"><i class="fa fa-code"></i></div>          
+              <h2>Self Growing</h2>
+              <p>Sparky grows more efficient each time you chat with it. Sparky can grow and understand your way of chatting with every message that you send to sparky</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="single_service">        
+              <div class="ico"><i class="fa fa-paint-brush"></i></div>         
+              <h2>Bundled features</h2>
+              <p>We are planning on getting sparky a whole lot of features starting from being a simple chatbot till controlling a smart home</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="single_service">        
+              <div class="ico"><i class="fa fa-heart-o"></i></div>        
+              <h2>Made with love</h2>
+              <p>We love Sparky and hope that everyone does the same and to make sparky to be a reality we need the help of everyone</p>
+            </div>
+          </div>
+
+      </div>
+    </div><br><br><br>
+  </div><br><br><br><br><br><br>
+</div><!-- service area end   -->
+
+
+<div class="getit_area"id="Login_area">
+  <div class="container">
+    <div class="row">
+      <div class="getit_section">
+        <h1>Login right now to chat with sparky</h1>
+      </div>  
+    </div>
+  </div>
+</div><!--  getit area end -->
+<br><br><br><br><br><br>
+<div class="container">
+
+<div class="row" style="margin-top:20px">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+		<form id="login-form" action="loginform.php" method="post" role="form" style="display: block;">
+			<fieldset>
+				<h2>Please Sign In</h2>
+				<hr class="colorgraph">
+				<div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address">
+				</div>
+				<div class="form-group">
+                    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password">
+				</div>
+				<span class="button-checkbox">
+					<button type="button" class="btn" data-color="info">Remember Me</button>
+                    <input type="checkbox" name="remember_me" id="remember_me" checked="checked" class="hidden">
+					<a href="" class="btn btn-link pull-right">Forgot Password?</a>
+				</span>
+				<hr class="colorgraph">
+				<div class="row">
+					<div class="col-xs-6 col-sm-6 col-md-6">
+                        <input type="submit" class="btn btn-lg btn-success btn-block" value="Sign In">
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6">
+						<a href="register.php" class="btn btn-lg btn-primary btn-block">Register</a>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+</div>
+<br><br><br><br><br><br>
+<br><br><br>
+<div class="work_area">
+  <div class="container">
+    <div class="row">  
+      <div class="work_section">
+        <h1 class="wow bounceInLeft">Functional <span>work Process</span></h1>
+          <div class="col-md-12 wow bounceInRight animated">
+            <div class="bs-example">
+              <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#sectionA"><i class="fa fa-lightbulb-o"></i></a></li>
+                  <li><a data-toggle="tab" href="#sectionB"><i class="fa fa-compass"></i></a></li>
+                  <li><a data-toggle="tab" href="#sectionC"><i class="fa fa-cogs"></i></a></li>
+                  <li><a data-toggle="tab" href="#sectionD"><i class="fa fa-paper-plane"></i></a></li>
+                  <li><a data-toggle="tab" href="#sectionE"><i class="fa fa-line-chart"></i></a></li>
+              </ul>
+              <div class="tab-content">
+                  <div id="sectionA" class="tab-pane fade in active">
+                      <h3>Idea</h3>
+                      <p>Sparky is a self learning multipurpose AI chat bot that learns from the user, improves itself and gives better responses every time. Sparky can manage tasks and become your personal assistant to remind you about the events or meetings that you have . If you need someone to talk to sparky can become your bestfriend to listen and react to the things you say in a humane way. Sparky can also be used to respond to customer queries and sparky can answer them and guide them. Link it to your smart home and sparky can takecare of your home and the people inside it. Sparky is bundled with lot of features that would be useful for our everyday life.</p>
+                  </div>
+                  <div id="sectionB" class="tab-pane fade">
+                      <h3>Plan</h3>
+                      <p>To develop sparky into an A.I that has the capability to do multiple things</p>
+                  </div>
+                  <div id="sectionC" class="tab-pane fade">
+                      <h3>Mechanism</h3>
+                      <p>Sparky learns from the user and stores it into its database and each time it recieves similar kind of messages it gets better and replies to the user from its database thats most used in situations that sparky is facing right now</p>
+                  </div>
+                  <div id="sectionD" class="tab-pane fade">
+                      <h3>Future plans</h3>
+                      <p>To develop Sparky into a better A.I and develop its features that can assist its users with their everyday life.</p>
+                  </div>
+                  <div id="sectionE" class="tab-pane fade">
+                      <h3>Workflow</h3>
+                      <p>We are working our way through the challenges and we will keep on facing new challenges but we are sure that one day we will achieve our goal.</p>
+                  </div>                                                
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>  
+  </div>    
+</div><!-- work area end   -->
+      
+
+
+<div class="getit_area">
+  <div class="container">
+    <div class="row">
+      <div class="getit_section">
+        <h1>We will keep on improving please provide us support</h1>
+      </div>  
+    </div>
+  </div>
+</div><!--  getit area end -->
+
+
+
+<div class="contact_area">
+  <div class="container">
+    <div class="row">
+      <div class="contact_section">
+          <h1>Contact us</h1>
+          <p>OUR TEAM INCLUDES GREAT THINKERS. YOU WOULD LOVE TO WORK WITH THEM AS THEY ARE JUST AMAZING PEOPLE.</p>
+
+                  
+                    <div class="col-md-6">
+                        <div class="contact_text">
+                            <p>If you loved our idea and want to support us please keep on chatting with sparky and help it to grow into a better one.</p>
+                            </div>
+                            </div>
+                            <h3>contact info</h3>
+                           
+                            <ul class="contact_info col-md-6">
+                                <li>contact@sparky.ai</li>
+                                <li>Sparky tech</li>
+                            </ul>
+                               
+  
+                            <h3>follow us</h3><center>
+                            <ul class="contact_social col-md-12">
+                                <a href="#"><li><i class="fb fa fa-facebook-square"></i></li></a>
+                                <a href="#"><li><i class="tw fa fa-twitter-square"></i></li></a>
+                                <a href="#"><li><i class="rss fa fa-rss-square"></i></li></a>
+                                <a href="#"><li><i class="gp fa fa-google-plus-square"></i></li></a>
+                            </ul>                            
+                      </center>
+                 
+      </div>
+    </div>
+  </div> 
+</div><!-- contact area end   -->
+	<script>$(function(){
+    $('.button-checkbox').each(function(){
+		var $widget = $(this),
+			$button = $widget.find('button'),
+			$checkbox = $widget.find('input:checkbox'),
+			color = $button.data('color'),
+			settings = {
+					on: {
+						icon: 'glyphicon glyphicon-check'
+					},
+					off: {
+						icon: 'glyphicon glyphicon-unchecked'
+					}
+			};
+
+		$button.on('click', function () {
+			$checkbox.prop('checked', !$checkbox.is(':checked'));
+			$checkbox.triggerHandler('change');
+			updateDisplay();
+		});
+
+		$checkbox.on('change', function () {
+			updateDisplay();
+		});
+
+		function updateDisplay() {
+			var isChecked = $checkbox.is(':checked');
+			// Set the button's state
+			$button.data('state', (isChecked) ? "on" : "off");
+
+			// Set the button's icon
+			$button.find('.state-icon')
+				.removeClass()
+				.addClass('state-icon ' + settings[$button.data('state')].icon);
+
+			// Update the button's color
+			if (isChecked) {
+				$button
+					.removeClass('btn-default')
+					.addClass('btn-' + color + ' active');
+			}
+			else
+			{
+				$button
+					.removeClass('btn-' + color + ' active')
+					.addClass('btn-default');
+			}
+		}
+		function init() {
+			updateDisplay();
+			// Inject the icon if applicable
+			if ($button.find('.state-icon').length == 0) {
+				$button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
+			}
+		}
+		init();
+	});
+});</script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/wow.js"></script>
+
+    <script src="js/jquery.nicescroll.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>  
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+
+   <script src="js/skillset.js"></script>
+
+   <script src="js/owl.carousel.js"></script> 
+
+
+   <script src="js/scrollupto.js"></script>
+   <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
